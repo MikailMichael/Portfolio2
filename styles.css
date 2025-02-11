@@ -113,9 +113,33 @@ a {
     padding: 0.9rem;
 }
 
+/*CONTACT SECTION*/
+#contact {
+    height: 80vh;
+    background-color: var(--background-color);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact a {
+    color: var(--text-color);
+    font-size: 4rem;
+    transition:  0.3s;
+}
+
+#contact a:hover {
+    color: var(--red);
+    font-size: 5rem;
+}
+
 /*RESPONSIVE*/
-@media only screen and (max-width: 1000px) {
-    body {
-        background-color: white;
+@media only screen and (max-width: 768px) {
+    #navbar ul  {
+        justify-content: space-evenly;
+        padding: 0 20px;
+        padding-right: 0;
     }
 }
