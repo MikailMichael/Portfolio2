@@ -3,6 +3,7 @@
 :root {
     --red: #BE3144;
     --text-color: #F0F0F0;
+    --background-color: #1F1F1F;
 }
 
 * {
@@ -12,9 +13,7 @@
     font-family: Poppins, sans-serif;
 }
 
-#welcome-section {
-    height: 100vh;
-}
+
 
 /*NAV BAR*/
 
@@ -41,6 +40,31 @@
     font-size: 1.5rem;
 }
 
+/*WELCOME SECTION*/
+#welcome-section {
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-section h1 {
+    color: var(--text-color);
+    font-size: 4rem;
+}
+
+#welcome-section p {
+    color: var(--red);
+    font-size: 2rem;
+    font-weight: none;
+    font-style: italic;
+    text-align: center;
+}
+
+/*RESPONSIVE*/
 @media only screen and (max-width: 1000px) {
     body {
         background-color: white;
