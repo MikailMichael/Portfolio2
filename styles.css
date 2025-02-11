@@ -17,6 +17,11 @@ html {
     font-family: Poppins, sans-serif;
 }
 
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
 /*NAV BAR*/
 
 #navbar {
@@ -36,8 +41,6 @@ html {
 }
 
 #navbar a {
-    color: var(--text-color);
-    text-decoration: none;
     padding-right: 40px;
     font-size: 1.5rem;
 }
@@ -68,7 +71,6 @@ html {
 
 /*PROJECTS SECTION*/
 #projects {
-    height: 1000px;
     background-color: var(--background-color);
     padding: 10rem 2rem;
 }
@@ -83,8 +85,32 @@ html {
     border-bottom: 0.15rem solid var(--text-color);
 }
 
-#projects a {
-    
+/*PROJECTS GRID*/
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 10vh auto 6rem auto;
+}
+
+.project-tile {
+    background-color: var(--red);
+    box-shadow:1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+.project-tile img {
+    height: calc(100% - 4rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-tile p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.9rem;
 }
 
 /*RESPONSIVE*/
